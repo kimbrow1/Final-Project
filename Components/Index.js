@@ -1,10 +1,4 @@
-export { default as Home } from "./Home";
-import * as state from "../store";
-export { default as Activities } from "./Activities";
-export { default as ContactUs } from "./Contact Us";
-export { default as Nutrition } from "./Nutrition";
-export { default as SpecialOlympics } from "./Special Olympics";
-export { default as Videos } from "./Videos";
-export { default as FAQ } from "./FAQ";
-export { default as CommunityResources } from "./Community Resources";
-export { default as Blog } from "./Blog";
+export { default as Header } from "./Header";
+export { default as Nav } from "./Nav";
+export { default as Main } from "./Main";
+export { default as Footer } from "./Footer";
