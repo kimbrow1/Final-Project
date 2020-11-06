@@ -6,7 +6,9 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
 }
+
 li {
   display: inline;
   color: red;
@@ -50,7 +52,6 @@ h2 {
 
 .textwraphome {
   float: right;
-  margin: 0px;
-
+  margin: 50px;
 
 }

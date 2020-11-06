@@ -1,8 +1,8 @@
 export default [
   { title: "Home", text: "Home" },
   { title: "Nutrition", text: "Nutrition" },
-  { title: "Community Resources", text: "Community Resources" },
+  { title: "Resources", text: "Resources" },
   { title: "Videos", text: "Videos" },
-  { title: "Special Olympics", text: "Special Olympics" },
+  { title: "Specialolympics", text: "Specialolympics" },
   { title: "Activities", text: "Activities" }
 ];
