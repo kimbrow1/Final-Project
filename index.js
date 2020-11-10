@@ -1,4 +1,4 @@
-import { Header, Nav, Main, Footer } from "./components";
+import { Header, Nav, Main, Footer } from "./Components";
 import * as state from "./store";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
