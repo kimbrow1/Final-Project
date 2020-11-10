@@ -2,12 +2,13 @@ import { Header, Nav, Main, Footer } from "./components";
 import * as state from "./store";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
+import axios from "axios";
 
 const router = new Navigo(window.location.origin);
 
 router
   .on({
-    ":page": params => render(state[capitalize(params.page)]),
+    ":view": params => render(state[capitalize(params.view)]),
     "/": () => render(state.Home)
   })
   .resolve();
@@ -56,3 +57,13 @@ function addPicOnFormSubmit(st) {
     });
   }
 }
+
+axios
+  .get(
+    "http://api.openweathermap.org/data/2.5/weather?q=nashville&appid=3fa03a84bcbee6ee40906d4f6d74b43b"
+  )
+  .then(response => {
+    state.Home.weather.city = response.name;
+    state.Home.weather.temp = response.main.temp;
+    state.Home.weather.description = response.weather.main;
+  });

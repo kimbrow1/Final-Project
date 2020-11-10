@@ -1,21 +1,90 @@
-*{
+* {
   margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: aquamarine;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px aquamarine;
+  background-color: black;
+  margin: 30px;
+  text-transform: uppercase;
+}
+
+nav > i {
+  padding: 5px;
+  font-size: 0.5em;
+}
+nav > ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 3 3;
+}
+nav > ul > li {
+  padding: 0.5rem;
+  list-style-type: none;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-
 }
 
 li {
-  display: inline;
-  color: red;
+  display: fixed;
+  color: aquamarine;
   background-color: none;
-   width: max-content;
-   margin: 0;
+  width: max-content;
+  margin: 0;
 
+}
+
+p {
+  border: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-color: oldlace;
+  padding: 10px;
+  margin: 50px;
+}
+
+.home {
+  display: flex;
+  justify-content: flex-end;
+  color: aquamarine;
+}
+
+
+.olympics {
+  color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  border-color: black;
+  display: flex;
+  justify-content: flex-end;
+  color: aquamarine;
+
+}
+body {
+  background-color: black;
+  margin: 0;
+}
+
+h2 {
+  color: aquamarine;
+  display: flex;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 a {
@@ -29,29 +98,42 @@ a {
   margin: 0;
 }
 
-body {
-  background-color: black;
+.fa {
+  padding: 5px;
+  font-size: 5px;
+  width: 5px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
 }
 
-h2 {
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+h1{
   color: aquamarine;
-}
-
-.food {
-  display: flex;
-  flex-direction: row-reverse
-
-  color: aquamarine;
-}
-
-.home {
-  display: flex;
-  justify-content: flex-end;
-  color: aquamarine;
-}
-
-.textwraphome {
-  float: right;
-  margin: 50px;
-
+  text-decoration: underline;
+  text-transform: uppercase;
 }

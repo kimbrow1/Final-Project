@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "parcel-build": "parcel build index.html && cp _redirects ./dist/",
-    "serve": "parcel index.html"
+    "build": "parcel build index.html && cp _redirects ./dist/",
+    "serve": "parcel index.html",
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",

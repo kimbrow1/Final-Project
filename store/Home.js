@@ -1,4 +1,4 @@
 export default {
-  header: "Home",
+  header: "Special Bodies",
   view: "Home"
 };
