@@ -130,6 +130,7 @@ a {
 .fa-instagram {
   background: #125688;
   color: white;
+  display: flex;
 }
 
 h1{
@@ -137,3 +138,4 @@ h1{
   text-decoration: underline;
   text-transform: uppercase;
 }
+
