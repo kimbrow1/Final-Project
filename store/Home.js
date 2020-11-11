@@ -1,4 +1,8 @@
 export default {
   header: "Special Bodies",
-  view: "Home"
+  view: "Home",
+  weather: {
+    city: "",
+    temp: "29"
+  }
 };
