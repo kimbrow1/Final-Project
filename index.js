@@ -59,7 +59,7 @@ function addPicOnFormSubmit(st) {
 }
 
 axios
-  respnse.data.get(
+  response.data.get(
     "http://api.openweathermap.org/data/2.5/weather?q=nashville&appid=3fa03a84bcbee6ee40906d4f6d74b43b"
   )
   .then(response => {
