@@ -57,16 +57,3 @@ function addPicOnFormSubmit(st) {
     });
   }
 }
-<<<<<<< HEAD
-=======
-
-axios
-  response.data.get(
-    "http://api.openweathermap.org/data/2.5/weather?q=nashville&appid=3fa03a84bcbee6ee40906d4f6d74b43b"
-  )
-  .then(response => {
-    state.Home.weather.city = response.name;
-    state.Home.weather.temp = response.main.temp;
-    state.Home.weather.description = response.weather.main;
-  });
->>>>>>> 4362b42c1f016143cf81887f4cc64bc195707c83

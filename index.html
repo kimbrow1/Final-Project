@@ -9,17 +9,32 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i|Montserrat&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 </head>
 
 <body>
-    <script src="index.js">
-
-    </script>
-
-  </div>
-
-
   <div id="root"></div>
   <script src="index.js"></script>
+  <script>
+    function convertKtoF(kel){
+      return ((kel -  273.15) * 1.8) + 32
+    }
+    function getWeather() {
+      axios
+        .get(
+          "http://api.openweathermap.org/data/2.5/weather?q=nashville&appid=3fa03a84bcbee6ee40906d4f6d74b43b"
+        )
+        .then(res => {
+          res.data
+          res.data.main.temp;
+          console.log(res.data)
+          console.log(res.data.main.temp);
+          document.getElementById("weather").innerHTML = `Name of City: ${res.data.name}`;
+          document.getElementById("temp").innerHTML = `Temperature: ${Math.floor(convertKtoF(res.data.main.temp))}`;
+
+        });
+    }
+    </script>
 </body>
 </html>

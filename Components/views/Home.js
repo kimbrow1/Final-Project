@@ -1,20 +1,11 @@
-import getWeather from "../../lib/getWeather";
-
-export default st => {
-  console.log(st);
-  console.log(st.weather.temp);
-  if (st.weather.temp == "") {
-    setTimeout(() => {
-      console.log("ran again");
-    }, 2000);
-    return `<p>loading...</p>`;
-  }
-
-  return `
+import axios from "axios";
+export default () => `
 <section>
   <div class="home">
-<div>
-<p>${st.weather.temp}see</p>
+<div id="weather-wrapper">
+<button onClick="getWeather()"> Click me for the Weather</button>
+<p id="weather"></p>
+<p id="temp"></p>
 </div>
 <img class"textwraphome" src="https://assets.classy.org/5384511/808bd476-2fcf-11e9-944b-0a2328a86bcc.jpg" alt="NDS">
 
@@ -23,5 +14,7 @@ export default st => {
 </div>
 </section>
 
+
+
+
 `;
-};
